@@ -113,10 +113,11 @@ export default {
   methods: {
     ...mapMutations(["SET_CURRENT_INVOICE", "TOGGLE_EDIT_INVOICE", "TOGGLE_INVOICE"]),
 
-    ...mapActions(["DELETE_INVOICE", "UPDATE_STATUS_TO_PENDING", "UPDATE_STATUS_TO_PAID"]),
+    ...mapActions(["DELETE_INVOICE", "UPDATE_STATU3S_TO_PENDING", "UPDATE_STATUS_TO_PAID"]),
 
     getCurrentInvoice() {
       this.SET_CURRENT_INVOICE(this.$route.params.invoiceId);
+
       this.currentInvoice = this.currentInvoiceArray[0];
     },
 
